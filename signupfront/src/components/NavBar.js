@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 import {Link,withRouter} from 'react-router-dom'
 
 
@@ -12,18 +13,29 @@ class NavBar extends Component {
     }
 
 
-
+    
     render() {
+        
         const loginRegLink=(
             <ul className='nav nav-tabs'>
-                <li className='nav-item'>
-                    <Link to ="/login" className='nav-link'>
-                        <h1><img src="https://img.icons8.com/ios/50/000000/login-rounded-right--v1.png"/>Login</h1>
+                <li className='nav nav-tabs'>
+                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/about.png"/>About</h1>
                     </Link>
                 </li>
                 <li className='nav nav-tabs'>
-                    <Link to ="/register" className='nav-link'>
-                        <h1><img src="https://img.icons8.com/pastel-glyph/64/000000/petition.png"/>Register</h1>
+                    <Link to ="/login" className='nav-link' style={{color: "#000"}}>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/login-rounded-right--v1.png"/>Login</h1>
+                    </Link>
+                </li>
+                <li className='nav-tabs'>
+                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/sign-up.png"/>Register</h1>
+                    </Link>
+                </li>
+                <li className='nav nav-tabs'>
+                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/phone-disconnected.png"/>Contact Us</h1>
                     </Link>
                 </li>
             </ul>
@@ -67,8 +79,8 @@ class NavBar extends Component {
                 <div className='collapse navbar-collapse justify-content-md-center' id='navbar1'>
                     <ul className='nav nav-tabs'>
                         <li className='nav-item'>
-                            <Link to ="/" className='nav-link'>
-                                <h1><img src="https://img.icons8.com/ios-filled/50/000000/android-tablet.png"/>Home</h1>
+                            <Link to="/" className='nav-link' style={{color: "#000"}}>
+                                <h1><img src="https://img.icons8.com/ios/50/000000/home--v1.png"/>Home</h1>
                             </Link>
                         </li>
                     </ul>

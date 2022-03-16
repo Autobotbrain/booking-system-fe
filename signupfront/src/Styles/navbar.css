@@ -1,0 +1,22 @@
+.base{
+    position: absolute;
+    width: 1506px;
+    height: 74px;
+    left: 208px;
+    top: 5px;
+    
+    background: #FFFFFF;
+    box-shadow: 8px 10px 42px rgba(0, 0, 0, 0.42);
+    border-radius: 50px;
+}
+
+.base2{
+    position: absolute;
+    width: 1506px;
+    height: 40px;
+    left: 0px;
+    top: 1px;
+    
+    background: #DCDCDC;
+    border-radius: 50px 50px 0px 0px;
+}

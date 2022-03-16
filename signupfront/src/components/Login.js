@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { login } from './UserFunctions'
+import '../Styles/Login.css'
 
 export default class Login extends Component {
 
@@ -38,18 +39,24 @@ export default class Login extends Component {
         return (
 
             
-            <div className='container'>
+            <div className='loginContainer'>
             
-                <h2>
-                    <div className='row'>
+                    <div className='imageContainer'>
+                        <img className='image' src={require('../assets/jakob-rosen-zMii6FgTvSk-unsplash.jpg')} />
+                    </div>
+                    
+                    
+                    <div className='card'>
+                    
+                    <img className='logo' src={require('../assets/Taxi.png')} />
                         <div className='col-md-6 mt-5 mx-auto'>
                             <form noValidate onSubmit={this.onSubmit}>
                                 <h1 className='h3 mb-3 font-weight-normal'>
-                                    <p align='center'>User Login</p>
-                                    <div className=' form-group'>
+                                    <p className='signIn'>Sign In</p>
+                                    <div className='emailContainer'>
                                         <label htmlFor='email'>Email Address</label>
                                         <input type='email'
-                                                className='form-control'
+                                                className='inputBody'
                                                 name='email'
                                                 placeholder='Enter Email'
                                                 value={this.state.email}
@@ -57,10 +64,10 @@ export default class Login extends Component {
                                                 />
                                     </div>
 
-                                    <div className=' form-group'>
+                                    <div className='passwordContainer'>
                                         <label htmlFor='password'>password</label>
                                         <input type='password'
-                                                className='form-control'
+                                                className='inputBody'
                                                 name='password'
                                                 placeholder='Enter password'
                                                 value={this.state.password}
@@ -68,14 +75,28 @@ export default class Login extends Component {
                                                 />
                                     </div>
 
-                                    <button  className='btn btn-lg btn-primary btn-block'>Sign In</button>
+                                    
+                                    
+                                    <div className='userAggrementContainer'>
+                                    
+                                    <label className='userAggrementBody'>
+                                        <input type="checkbox" className='userAggrementCheckbox' />
+                                        I've read and agree with Terms of Service and our Privacy Policy
+                                    </label>
+                                    
+                                    </div>
 
+                                    <button  className='signInButton'>Sign In</button>
+
+                                    <p className='notAccountSingUpContainer'>Don’t have an acount?<a href='/'> SIGN UP</a></p>
+                                    <p className='poliyContainer'>By singing up you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
 
                                 </h1>
                             </form>
                         </div>
                     </div>
-                </h2>
+                    
+                
             </div>
         )
     }

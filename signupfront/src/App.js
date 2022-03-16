@@ -9,6 +9,9 @@ import Profile from './components/Profile'
 import FileUpload from './components/FileUpload'
 import BookingList from './components/BookingList'
 import Message from "./components/Message";
+
+
+import './Styles/navbar.css'
 // import axios from 'axios';
 // import './App.css';
 // import { render } from "react-dom/cjs/react-dom.development";
@@ -125,18 +128,31 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <NavBar/>
-          
-          <Route exact path='/' component={Landing} />
-          <div className="container">
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/uploads" component={FileUpload}/>
-            <Route exact path ="/bookings" component={BookingList}/>
+
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            background: "#F4F5F7",
+            justifyContent: 'center',
+            height:1000
+          }}
+        >
+          <div className="container" >
+            <div className="base"><div className="base2"><NavBar /></div></div>
+
+            <Route exact path='/' component={Landing} />
+            <div className="container">
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/profile" component={Profile} />
+              <Route exact path="/uploads" component={FileUpload} />
+              <Route exact path="/bookings" component={BookingList} />
+            </div>
           </div>
         </div>
+
+
 
       </Router>
     )
