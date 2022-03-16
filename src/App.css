@@ -1,12 +1,13 @@
 *{
-  background-color: #F4F5F7 ;
+  background-color: #F4F5F7
+;
 }
+
 
 .para{
   margin-left: 15px;
   background-color: white;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: #838488;
+
 }
 
 .type{
@@ -34,25 +35,31 @@ img{
    padding: 0;
    opacity: 100%;
    border-radius: 0 50px 0 0;
-   width:  460.626px;
-   height:  680.5px; 
+   width: 500px;
+   height: 520px;
+
+   
 }
 
 .signup{
   background-color: rgb(255, 255, 255);
   margin-top: 10px;
-  margin-left:0px;
+  margin-left: 0px;
 }
 .left{
   background-color: white;
   padding: 20px;
   border-radius: 0 50px 0 50px;
+ 
+ 
 }
 
 .fm{
   background-color: rgb(255, 255, 255);
   box-shadow:#b1b2b5;
 }
+
+
 
 .form-control{
   margin-bottom: 7px;
@@ -66,6 +73,8 @@ img{
   border:1px solid rgb(206, 206, 206);
 }
 
+
+
 .btn{
   cursor: pointer;
   background-color: black;
@@ -75,6 +84,7 @@ img{
   border-width: 0ch;
   font-size: 20px;
   color: #f7c40a;
+ 
 }
 
 .btn:hover{
