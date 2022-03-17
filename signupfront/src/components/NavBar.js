@@ -19,7 +19,7 @@ class NavBar extends Component {
         const loginRegLink=(
             <ul className='nav nav-tabs'>
                 <li className='nav nav-tabs'>
-                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                    <Link to ="/" className='nav-link' style={{color: "#000"}}>
                         <h1><img src="https://img.icons8.com/ios/50/000000/about.png"/>About</h1>
                     </Link>
                 </li>
@@ -34,7 +34,7 @@ class NavBar extends Component {
                     </Link>
                 </li>
                 <li className='nav nav-tabs'>
-                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                    <Link to ="/" className='nav-link' style={{color: "#000"}}>
                         <h1><img src="https://img.icons8.com/ios/50/000000/phone-disconnected.png"/>Contact Us</h1>
                     </Link>
                 </li>
