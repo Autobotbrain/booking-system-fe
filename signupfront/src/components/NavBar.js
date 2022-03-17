@@ -44,22 +44,22 @@ class NavBar extends Component {
             <ul className='nav nav-tabs'>
                 <li className='nav-item'>
                     <Link to ="/profile" className='nav-link' style={{color: "#000"}}>
-                        <h1><img src="https://img.icons8.com/small/16/000000/gender-neutral-user.png"/>User</h1>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/user-menu-male.png"/>User</h1>
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to ="/AddBookings" className='nav-link' style={{color: "#000"}}>
-                        <h1><img src="https://img.icons8.com/small/16/000000/edit.png"/>Add Booking</h1>
+                        <h1><img src="https://img.icons8.com/ios/50/000000/booking.png"/>Add Booking</h1>
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <Link to ="/bookings" className='nav-link' style={{color: "#000"}}>
-                        <h1><img src="https://img.icons8.com/small/16/000000/edit.png"/>Booking List</h1>
+                        <h1><img src="https://img.icons8.com/external-others-cattaleeya-thongsriphong/64/000000/external-booking-hotel-service-outline-others-cattaleeya-thongsriphong-2.png"/>Booking List</h1>
                     </Link>
                 </li>
                 <li className='nav-item'>
                     <a href='' onClick={this.logOut.bind(this)} className='nav-link' style={{color: "#000"}}>
-                    <h1><img src="https://img.icons8.com/small/16/000000/exit.png"/>Logout</h1>
+                    <h1><img src="https://img.icons8.com/ios/50/000000/exit.png"/>Logout</h1>
                     </a>
                 </li>
             </ul>
