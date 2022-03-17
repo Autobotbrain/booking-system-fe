@@ -1,6 +1,7 @@
 import axios from "axios"
 
 export const register =newUser=>{
+    console.log(newUser)
     return axios
         .post('http://localhost:5000/app/signup',{
             first_Name:newUser.first_Name,
