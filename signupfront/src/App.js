@@ -8,7 +8,9 @@ import Landing from './components/Landing'
 import Profile from './components/Profile'
 import FileUpload from './components/FileUpload'
 import BookingList from './components/BookingList'
-import Message from "./components/Message";
+import Message from './components/Message'
+import AddBooking from './components/AddBooking'
+
 
 
 import './Styles/navbar.css'
@@ -148,6 +150,7 @@ class App extends Component {
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/uploads" component={FileUpload} />
               <Route exact path="/bookings" component={BookingList} />
+              <Route exact path="/AddBookings" component={AddBooking} />
             </div>
           </div>
         </div>

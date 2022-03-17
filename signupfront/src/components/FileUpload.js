@@ -4,6 +4,9 @@ import axios from 'axios'
 import Progress from './Progress'
 
 
+
+
+
 const FileUpload = () => {
     
     const [file, setFile] = useState('')
@@ -56,10 +59,10 @@ const FileUpload = () => {
     return (
         <Fragment>
             <div>
-                <h1 align='center'>upload Bank Slip</h1>
+                <h1 align='center'>Payment</h1>
                 <br />
-                <h2><img src="https://img.icons8.com/ios/50/000000/login-rounded-right--v1.png" />Bank Slip</h2>
-                <h2><img src="https://img.icons8.com/ios/50/000000/login-rounded-right--v1.png" />You can Upload Photo</h2>
+                <h2><img src="https://img.icons8.com/ios-glyphs/30/000000/card-in-use.png"/>Bank Slip</h2>
+                <h2><img src="https://img.icons8.com/ios/50/000000/camera--v1.png"/>You can upload Photo of a Bank slip</h2>
             </div>
             <h2>{message ? <Message msg={message} /> : null}
 
@@ -81,8 +84,8 @@ const FileUpload = () => {
                         <div className='row mt-5'>
                             <div className='col-md-6 m-auto'>
                                 <h3 className='text-center'>{uploadedFile.fileName}</h3>
-                                <img src="../../signupbacknd/models/uploads/387325-white-tree-wallpaper-top-free-white-tree-background.jpg" width="100" height="100" alt='wada nh' /> 
-                                <img style={{ width: '100%' }} src={uploadedFile.filePath} alt='' />
+                                <img style={{ width: '100%' }} src={uploadedFile.filePath} alt='png' />
+                                <h6>has been sended to {uploadedFile.filePath}</h6>
                             </div>
                         </div>
                     ) : null

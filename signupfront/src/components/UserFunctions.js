@@ -30,6 +30,17 @@ export const login=user=>{
             .catch(err=>{
                 console.log(err)
             })
-    //     axios.post('http://localhost:3000/app/signup', registered)
-//         .then(response => console.log(response.data))
+}
+
+export const addBooking =newUser=>{
+    return axios
+        .post('http://localhost:5000/bookings/add',{
+            time:newUser.time,
+            user_name:newUser.user_name,
+            route:newUser.route,
+        })
+            .then(res=>{
+                console.log("Booking Aded");
+                window.alert("Booking Added successfull")
+            })
 }

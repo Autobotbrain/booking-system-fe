@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { register } from './UserFunctions'
 
-export default class Regiister extends Component {
+export default class Register extends Component {
 
     constructor(){
         super();

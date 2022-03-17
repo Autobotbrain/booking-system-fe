@@ -12,12 +12,13 @@ export default class BookingList extends Component {
             routes: []
         }
 
+        
 
     }
 
     componentDidMount() {
-
-        axios.get('https://localhost:5000/bookings')
+        
+        axios.get('http://localhost:5000/bookings/')
             .then(Response => {
                 this.setState({ routes: Response.data })
             })
@@ -37,14 +38,17 @@ export default class BookingList extends Component {
     render() {
         return (
             <div>
-                <h1 align='center'>Booking List</h1>
+    
                 <h2>
-                    <table className='table table-striped' style={{ marginTop: 20 }}>
-                        <tread>
+                    <table className='table ' style={{ marginTop: 140,background:"white"}}>
+                    <h1 align='center'>Booking List</h1>
+                        <tread style={{ margin:120,background:"#DCDCDC"}}>
                             <tr>
-                                <th>Route name</th>
-                                <th>Driver Name</th>
-                                <th>Date</th>
+                                <th scope="col">Route---------</th>
+                                <th scope="col">Time-------</th>
+                                <th scope="col">Passenger-----</th>
+                                <th scope="col">Date</th>
+                                
                             </tr>
                             <tbody>
                                 {this.TabRow()}
