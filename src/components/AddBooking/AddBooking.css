@@ -1,0 +1,76 @@
+*{
+    background-color: rgb(247, 244, 244);
+}
+
+.addbooking1 {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(97, 91, 27);
+    color: greenyellow;
+    font-weight: 400px;
+  }
+  .viewShedule1 {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(59, 143, 132);
+    color: rgb(234, 255, 47);
+    font-weight: 400px;
+  }
+  .container{
+      padding: 100px;
+  }
+  .public{
+      margin: 40px;
+      text-align: center;
+      font-size: 40PX;
+  }
+  
+  
+  .imgBx{
+    margin-left: 180px;
+    border-radius: 70px;
+ }
+ .VId{
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.VId > span{
+    background-color:rgb(222, 228, 228);
+    padding: 10px;
+    /* margin-top: -10px;
+    margin-left: 50px; */
+    text-align: center;
+}
+.details{
+    background-color: rgb(253, 253, 253);
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.field3{
+    width: 30%;
+    /* background-color: rgb(121, 117, 117); */
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin: 7px;
+}
+
+
+
+
+  
