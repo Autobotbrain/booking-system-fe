@@ -4,8 +4,8 @@ export const register =newUser=>{
     console.log(newUser)
     return axios
         .post('http://localhost:5000/app/signup',{
-            first_Name:newUser.first_Name,
-            last_Name:newUser.last_Name,
+            first_name:newUser.first_name,
+            last_name:newUser.last_name,
             email:newUser.email,
             password:newUser.password
         })

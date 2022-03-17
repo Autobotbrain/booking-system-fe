@@ -55,7 +55,7 @@ export default class AddBooking extends Component {
                                     </div>
 
                                     <div className=' form-group'>
-                                        <label htmlFor='Passenger Name'>user_name</label>
+                                        <label htmlFor='Passenger Name'>Passenger Name</label>
                                         <input type='text'
                                                 className='form-control'
                                                 name='user_name'
