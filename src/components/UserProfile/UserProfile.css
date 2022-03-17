@@ -1,0 +1,108 @@
+*{
+    background-color: rgb(247, 244, 244);
+    /* font-family: DejaVu Sans Mono, monospace; */
+   font-family: Trebuchet MS, sans-serif
+}
+
+.pic{
+    background-color: rgb(88, 88, 235);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#r{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+#im{
+    text-align: right;
+}
+
+.UpdateVehicle{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(55, 55, 56);
+    color: greenyellow;
+}
+
+/* .DeleteProf{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(151, 7, 7);
+    color: greenyellow;
+} */
+
+.container{
+    padding: 100px;
+}
+
+.ViewOrders{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(39, 40, 87);
+    color: rgb(234, 255, 47);
+    font-weight: 400px;
+}
+
+.field{
+    width: 100%;
+    background-color: rgb(219, 217, 217);
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin: 7px;
+}
+
+.field2{
+    width: 100%;
+    background-color:rgb(219, 217, 217);
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 7px;
+}
+
+.imgBx{
+   margin-left: 180px;
+   border-radius: 70px;
+}
+
+.details{
+    background-color: rgb(253, 253, 253);
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.VId{
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.VId > span{
+    background-color:aqua;
+    padding: 10px;
+    /* margin-top: -10px;
+    margin-left: 50px; */
+    text-align: center;
+}
+

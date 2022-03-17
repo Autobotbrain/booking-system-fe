@@ -1,0 +1,134 @@
+*{
+    background-color: rgb(247, 244, 244);
+}
+
+.pic{
+    background-color: rgb(88, 88, 235);
+}
+
+.UpdateVehicle{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(87, 39, 39);
+    color: greenyellow;
+}
+
+.container{
+    padding: 100px;
+}
+
+.ViewOrders{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(39, 40, 87);
+    color: rgb(234, 255, 47);
+    font-weight: 400px;
+}
+
+.field{
+    width: 100%;
+    /* background-color: rgb(121, 117, 117); */
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin: 7px;
+}
+
+.field2{
+    width: 100%;
+    /* background-color: rgb(121, 117, 117); */
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 7px;
+}
+
+.imgBx{
+   margin-left: 180px;
+   border-radius: 70px;
+}
+
+.details{
+    background-color: rgb(253, 253, 253);
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.VId{
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.VId > span{
+    background-color:rgb(222, 228, 228);
+    /* padding: 15px; */
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-size: 14px;
+    color: rgb(111, 111, 216);
+    text-align: center;
+    /* margin-top: -10px;
+    margin-left: 50px; */
+    text-align: center;
+}
+
+
+.col-6{
+    margin-left: -50px;
+    margin-top: 0px;
+    
+    
+}
+
+.public{
+    background-color: white;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+
+.List{
+    background-color: white;
+   
+    
+}
+
+.list-group-item{
+    margin-bottom: 20px;
+    height: 60px;
+    text-align: center;
+    /* border-radius: 20px;
+} */
+border-color: gold;
+}
+
+.row{
+    background-color: white;
+}
+
+#con{
+    background-color: white;
+    /* width: 400px;
+    height: 500px; */
+}
