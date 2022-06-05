@@ -8,7 +8,7 @@
   
 }
 body{
-    background-color: #F4F5F7;
+    background-color: #eef2fa;
 }
 
 section{
@@ -25,19 +25,20 @@ section{
 section .imgBx{
     position: relative;
     width: 50%;
-    height: 100;
+    height: 100%;
+    float: right;
+    margin-left: 0
     
 }
 
 section .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute; */
     width: 90%;
     height: 100%;
     object-fit: cover;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+   
 }
 
 section .contentBx{
@@ -50,9 +51,16 @@ section .contentBx{
     border-radius: 40px 0px 0px 40px;
 }
 
+.form{
+    background-color: white;
+}
+
 section .contentBx .formBx{
+    
     width: 65%;
-    margin-left: -120px;
+    margin-left: -25%;
+    background-color: white;
+    
     
 }
 
@@ -67,8 +75,7 @@ section .contentBx .formBx h2{
     letter-spacing: 1px;
     font-size: 22px;
     margin-top: 20px;
-    
-  
+    background-color: white;
 }
 
 section .contentBx .formBx .inputBx{
@@ -77,16 +84,7 @@ section .contentBx .formBx .inputBx{
     color:white;
 }
 
-section .contentBx .formBx .inputBx span{
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
-    color:black;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 1px;
-   
-}
+
 
 section .contentBx .formBx .inputBx input{
     width: 110%;
@@ -119,9 +117,9 @@ section .contentBx .formBx .inputBx input[type="submit"]
 .btn{
    
     border-radius: 30px;
-    height:37px;
+    height:15%;
     padding: 10px 10px 10px 10px;
     background-color: #000000;
     color: yellow;
-    width:200px;
+    width:50%;
 }

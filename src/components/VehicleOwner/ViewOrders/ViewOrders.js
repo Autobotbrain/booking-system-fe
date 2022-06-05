@@ -58,9 +58,9 @@ export default function ViewOrders() {
             </div>
 
             <div className="col-3">
-            <div className="img">
+            
               <img src ="2.jpg"  width="150" className='imgBx' height="150"></img>
-             </div>
+             
 
              <div className="details">
                  <div className="VId">

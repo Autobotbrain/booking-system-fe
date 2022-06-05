@@ -3,6 +3,8 @@ import axios from 'axios';
 //import './App.css';
 import './new.css';
 
+
+
 class VehicleSign extends Component {
   constructor(){
     super()
@@ -124,11 +126,13 @@ class VehicleSign extends Component {
           
           <div className="contentBx">
               <div className="formBx">
-                <h2>Vehicle Sign up</h2>
 
-                <form onSubmit={this.onSubmit}>
+                <form className="form" onSubmit={this.onSubmit}>
+
+                <h2>Vehicle Sign up</h2>
+                
                   <div className="inputBx">
-                      {/* <span>Vehicle Owner : </span> */}
+                      
 
                       <input type='text' 
                       placeholder="Vehicle Owner" 
@@ -140,7 +144,7 @@ class VehicleSign extends Component {
                   </div>
 
                   <div className="inputBx">
-                      {/* <span>Vehicle Model : </span> */}
+
 
                       <input type='text' 
                       placeholder="Vehicle Model" 
@@ -248,9 +252,9 @@ class VehicleSign extends Component {
                       />
                   </div> 
                
-                <div >
+                
                 <input type='submit' className="btn" value='SIGN UP ME'/>
-                </div>
+               
                   
 
                 </form>
@@ -258,120 +262,11 @@ class VehicleSign extends Component {
           </div>
 
           <div className="imgBx">
-              <img src ="2.jpg"></img>
+              <img src ="2.jpg"/>
           </div>
         </section>
           
         </div>
-
-       
-
-
-
-        
-          //  <div className="container">
-            
-             
-          //    <div className="left">
-          //    <div className="right"> <img src='2.jpg'></img></div>
-          //     <h2 className="signup">Vehicle Registration</h2>
-          //     <form className="fm" onSubmit={this.onSubmit}>
-          //       <input type='text' 
-          //         placeholder="Vehicle Owner" 
-          //         onChange={this.changeVehicleOwner}
-          //         value={this.state.VehicleOwner}
-          //         className="form-control"
-          //         required
-          //       />
-          //       <br/>
-          //       <input type='text' 
-          //         placeholder="Vehicle Model" 
-          //         onChange={this.changeVehicleModel}
-          //         value={this.state.VehicleModel}
-          //         className="form-control"
-          //         required
-          //       />
-          //       <br/>
-          //       <input type='text' 
-          //         placeholder="Vehicle Number" 
-          //         onChange={this.changeVehicleNumber}
-          //         value={this.state.VehicleNumber}
-          //         className="form-control"
-          //         required
-          //       />
-          //       <br/>
-
-          //       <input type='text' 
-          //              placeholder="Vehicle Type" 
-          //              onChange={this.changeType}  
-          //              value={this.state.Type} 
-          //              className='form-control'
-          //              required
-          //              />
-
-          //       <input type='text' 
-          //         placeholder="Number of Seats" 
-          //         onChange={this.changeSeats}
-          //         value={this.state.VehicleSeats}
-          //         className="form-control"
-          //         id="noSeats"
-          //         required
-          //       />
-          //       <br/>
-
-              
-          //              <input type='text' 
-          //              placeholder="Owner's ID Number" 
-          //              onChange={this.changeID}
-          //              value={this.state.ID}
-          //              className='form-control'
-          //              required
-          //        />
-                   
-          //          <br/>
-
-
-          //             <input type='text' 
-          //             placeholder="Owner's Mobile Number" 
-          //              onChange={this.changeOwners_Mobile_Number}
-          //              value={this.state.Owners_Mobile_Number}
-          //              className='form-control'
-          //              required
-          //        />
-                 
-
-          //       <input type='email' 
-          //         placeholder="E-mail" 
-          //         onChange={this.changeEmail}
-          //         value={this.state.email}
-          //         className="form-control"
-          //         required
-          //       />
-          //       <br/>
-          //       <input type='password' 
-          //         placeholder="password" 
-          //         onChange={this.changePassword}
-          //         value={this.state.password}
-          //         className="form-control"
-          //         required
-          //       />
-                
-          //       <br/>
-          //       <input type='submit' className="btn" value='SIGN UP ME'/>
-          //     </form>
-          //   </div>
-          
-          
-         
-          //   <div>
-              
-          //   </div>
-          // </div> 
-            
-          
-            
-       
-      
     );
   }
 }

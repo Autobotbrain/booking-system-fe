@@ -1,0 +1,56 @@
+.button{
+    background-color: rgb(91, 9, 9);
+    color: rgb(213, 213, 213);
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Col-3 LEFT */
+.leftButtons{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+    background-color: rgb(75, 73, 73);
+    color: greenyellow;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+
+/* col-6 CENTER */
+
+.newblog-button{
+    margin-bottom: 30px;
+    float: right;
+    background-color: rgb(60, 209, 85);
+    border: none;
+    border-radius: 20px;
+    height: 3VW;
+    width: 15VW;
+    font-size: 1vw;
+    margin-top: -2vw;
+}
+
+
+/* Col-3 Right */
+
+.img{
+    margin-left: 0;
+    border-radius: 70px;
+    width: 7vw;
+    height: 7vw;
+    margin-bottom: 5vw;
+ }
+
+.RightButtons{
+    width: 8VW;
+    height: 8vw;
+    border-radius: 10px;
+    background-color: rgb(75, 73, 73);
+    color: greenyellow;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
