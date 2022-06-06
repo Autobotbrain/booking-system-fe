@@ -1,3 +1,5 @@
+//----------Add a new annousment page---------
+
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -34,8 +36,9 @@ export default function AddNewAnno() {
 
   return (
     <div>
-
-                      <h5 className='public'>Add a new Announsment</h5>
+                      <div className="public">
+                        ADD NEW ANNOUSMENT
+                      </div>
             
                         <div className="create">
                            <form onSubmit={handleSubmit}>

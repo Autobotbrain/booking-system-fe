@@ -2,9 +2,25 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import "../AssignDrivers/AssignDriver.css"
+// import './Pay'
+import Pay from './Pay'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+
+const URL ="http://localhost:4000/payment/getAll" 
+
+const fetchHandler = async() => {
+  return await axios.get(URL).then((res)=> res.data)
+}
 
 export default function PaymentRequest() {
 
+  const [Annos, setAnnos] = useState();
+  useEffect(()=>{
+      fetchHandler().then((data)=>setAnnos(data.anno)); //here anno is the array name
+  },[]);
+
+  console.log(Annos);
 
   return (
     <div className='container'>
@@ -31,16 +47,16 @@ export default function PaymentRequest() {
             <div className="row" id="cc">
 
             <div className="col-12">
-        
-                <ul className="list-driver">
-                <li className="list-Driver-item disabled" aria-disabled="true"></li>
-                <li className="list-Driver-item"></li>
-                <li className="list-Driver-item"></li>
-                <li className="list-Driver-item"></li>
-                <li className="list-Driver-item"></li>
-                <li className="list-Driver-item"></li>
+{/* ---------------------Payment front end and backend connecting part------------------- */}
+<ul>
+                  {Annos && Annos.map((anno, i)=>(
+                  <div key={i}>
+                  <Pay anno={anno}/> 
+                  </div>
+                  )) }
                 </ul>
-            
+
+
             </div>
             </div>
                 

@@ -106,11 +106,12 @@
 // }
 
 
+//----------public annousment public page------------
+
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Anno from './Anno';
-//import "./Annousment.css";
 
 const URL ="http://localhost:4000/app/AddNewAnno" 
 
