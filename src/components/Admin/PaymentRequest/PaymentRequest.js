@@ -2,7 +2,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import "../AssignDrivers/AssignDriver.css"
-// import './Pay'
 import Pay from './Pay'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -17,7 +16,7 @@ export default function PaymentRequest() {
 
   const [Annos, setAnnos] = useState();
   useEffect(()=>{
-      fetchHandler().then((data)=>setAnnos(data.anno)); //here anno is the array name
+      fetchHandler().then((data)=>setAnnos(data)); //here anno is the array name
   },[]);
 
   console.log(Annos);
