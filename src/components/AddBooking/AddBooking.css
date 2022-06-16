@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(247, 244, 244);
+    background-color: rgb(248, 239, 239);
 }
 
 .addbooking1 {
@@ -69,6 +69,15 @@
     height: 35px;
     margin: 7px;
 }
+.Payment {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(247, 7, 7);
+    color: rgb(9, 16, 1);
+    font-weight: 40px;
+  }
 
 
 

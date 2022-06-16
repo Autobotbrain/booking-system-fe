@@ -5,6 +5,8 @@ import UserProfile from "./components/userProfile/userProfile";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import AddBooking from "./components/AddBooking/AddBooking";
 import Update from "./components/Update/Update";
+import Payment from "./components/Payment/Payment";
+
 
 
 
@@ -24,6 +26,8 @@ class App extends Component {
            <Route path='/a' element={<UserProfile />} />
            <Route path='/addbooking' element={<AddBooking />} />
            <Route path='/update' element={<Update/>} />
+           <Route path='/Payment' element={<Payment/>} />
+    
           </Routes>
         </Router>
                  

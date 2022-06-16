@@ -1,5 +1,6 @@
 import React from 'react'
 import './AddBooking.css';
+import {Link} from 'react-router-dom';
 
 export default function AddBooking() {
   return (
@@ -37,6 +38,11 @@ export default function AddBooking() {
               <option value="opel">Car</option>
               <option value="audi">Audi</option>
             </select>
+            <br/>
+
+            <Link to="/Payment"> 
+               <button type='button' className='Payment'>Confirm Booking</button>
+               </Link>
   
 
               

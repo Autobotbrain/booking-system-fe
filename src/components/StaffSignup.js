@@ -1,232 +1,250 @@
-import React, {Component} from "react";
-import axios from 'axios';
+import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import './new.css';
 
-class StaffSignup extends Component {
-  constructor(){
-    super()
-    this.state ={
+  
+
+export default function StaffSignup() {
+
+
+
+const history = useNavigate();
+  const [inputs, setInputs] = useState({
       firstName:'',
       lastName:'',
       phoneNumber:'',
-      email:'',
-      password:'',
       nic:'',
       address:'',
-      company:''
-    }
-
-    this.changefirstName= this.changefirstName.bind(this)
-    this.changelastName= this.changelastName.bind(this)
-    this.changephoneNumber= this.changephoneNumber.bind(this)
-    this.changeemail= this.changeemail.bind(this)
-    this.changepassword= this.changepassword.bind(this)
-    this.changenic= this.changenic.bind(this)
-    this.changeaddress= this.changeaddress.bind(this)
-    this.changecompany= this.changecompany.bind(this)
-    this.onSubmit=this.onSubmit.bind(this)
-
-  }
-
-  changefirstName(event){
-    this.setState({
-      firstName:event.target.value
-    })
-  }
-
-  changelastName(event){
-    this.setState({
-      lastName:event.target.value
-    })
-  }
-
-  changephoneNumber(event){
-    this.setState({
-      phoneNumber:event.target.value
-    })
-  }
-
-  changeemail(event){
-    this.setState({
-      email:event.target.value
-    })
-  }
-
-  changepassword(event){
-    this.setState({
-      password:event.target.value
-    })
-  }
-
-  changenic(event){
-    this.setState({
-      nic:event.target.value
-    })
-  }
-
-  changeaddress(event){
-    this.setState({
-      address:event.target.value
-    })
-  }
-
-  changecompany(event){
-    this.setState({
-      company:event.target.value
-    })
-  }
-
-  onSubmit(event){
-    event.preventDefault()
-
-    const registered={
-      firstName:this.state.firstName,
-      lastName:this.state.lastName,
-      phoneNumber:this.state.phoneNumber,
-      email:this.state.email,
-      password:this.state.password,
-      nic:this.state.nic,
-      address:this.state.address,
-      company:this.state.company
-    }
-
-    axios.post('http://localhost:4000/app/signup', registered)
-        .then(response => console.log(response.data))
-
-    this.setState({
-      firstName:'',
-      lastName:'',
-      phoneNumber:'',
       email:'',
       password:'',
-      nic:'',
-      address:'',
-      company:''
-    })
-  }
+      // confirmPassword:''
+  });
+
+  const handleChange = (e) => {
+    console.log(inputs);
+    setInputs((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+
+  //SUCCESSFULL VALIDATION
+  const [message, setMessage] = useState("");
+
+  const handlValidation = () => {
+    setMessage("REGISTRATION SUCCESSFULL");
+  };
+
+
+  const sendRequest = async () => {
+
+    const re = /^[A-Za-z]+$/;
+    // const number = /^[0-9]+$/;
+    //email validatio
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!inputs.firstName) 
+    {
+      alert("Vehicle Owners Name is required");
+    } 
+    else if (!re.test(inputs.firstName)) 
+    {
+      alert("Enter only letters");
+    } 
+    else if (!inputs.lastName) 
+    {
+      alert("Vehicle Owners Name is required");
+    } 
+    else if (!re.test(inputs.lastName)) 
+    {
+        alert("Enter only letters");
+    } 
+    else if (!inputs.phoneNumber) 
+    {
+      alert("Phone  number is required");
+    } 
+    else if (inputs.phoneNumber.length < 10) 
+    {
+      alert("Phone  number should have 10 characters ");
+    }
+    else if (!inputs.nic) 
+    {
+      alert("NIC is required");
+    } 
+    else if (!inputs.address) 
+    {
+      alert("address Model is required");
+    } 
+    else if (!regex.test(inputs.email)) 
+    {
+      alert("Ëmail is not valid");
+    } 
+    else if (!inputs.email) 
+    {
+      alert("Ëmail is required");
+    } 
+    else if (!inputs.password) 
+    {
+      alert("Password is required");
+    } 
+    else if (inputs.password.length < 4 || inputs.password.length > 10) 
+    {
+      alert("First name should be more than 4 characters");
+    }
    
-  render() { 
-    return (
-      <div>
-        <section>
-          <div className="contentBx">
-             <div className="formBx">
-               <h2>Staff Sign up</h2>
+    else {
+  
+      await axios
+      .post("http://localhost:5000/app/signupDetails", {
+        firstName: String(inputs.firstName),
+        lastName: String(inputs.lastName),
+        phoneNumber: String(inputs.phoneNumber),
+        nic: String(inputs.nic),
+        address: String(inputs.address),
+        email: String(inputs.email),
+        password: String(inputs.password),
+        // confirmPassword: String(inputs.confirmPassword),
+      })
+      .then((res) => res.data);
+    
+      //CAllING VALIDITY FUNCTIONS
+      handlValidation();
+      //window.location.reload(2000);
+    }
+  };
 
-        
-                 <form onSubmit={this.onSubmit}>
-                  <div className="inputBx">
-                      {/* <span>First Name : </span> */}
+  const handleSubmit = (e) => {
+    console.log(inputs);
+    e.preventDefault();
+    sendRequest();
+     //reload the window with empty fields
+    
+  };
+
+
+  return (
+    <div>
+      <div className="validity"> {message}</div>
+          <div>
+        <section>
+          
+          <div className="contentBx">
+              <div className="formBx">
+
+                <form className="SignupForm" onSubmit={handleSubmit} >
+
+                <h2>Staff-member Sign up</h2>
                 
-                       <input type='text' 
-                       placeholder="First Name" 
-                       onChange={this.changefirstName}
-                       value={this.state.firstName}
-                       className='own'
-                       required
+                  <div className="SignupInputBox">
+                      
+
+                      <input type='text' 
+                      placeholder="firstName" 
+                      className='own'
+                      value={inputs.firstName}
+                      onChange={handleChange}
+                      // required
+                      name='firstName'
+                       />
+                      
+                  </div>
+
+                  <div className="SignupInputBox">
+
+
+                      <input type='text' 
+                      placeholder="lastName" 
+                      className='own'
+                      value={inputs.lastName}
+                      onChange={handleChange}
+                      // required
+                      name='lastName'
+                      />
+                  </div>
+
+                  <div className="SignupInputBox">
+                      <input type='text' 
+                       placeholder="phoneNumber" 
+                      className='own'
+                      value={inputs.phoneNumber}
+                      onChange={handleChange}
+                      // required
+                      name='phoneNumber'
                        />
                   </div>
-                  <div className="inputBx">
-                      {/* <span>Last Name : </span> */}
-                
-                       <input type='text' 
-                      placeholder="Last Name" 
-                      onChange={this.changelastName}
-                      value={this.state.lastName}
-                      className='own' 
-                      required
-                      />
-                  </div>    
-                  
-                  <div className="inputBx">
-                      {/* <span>Phone Number : </span> */}  
+
+                  <div className="SignupInputBox">
                       <input type='text' 
-                      placeholder="Phone Number" 
-                      onChange={this.changephoneNumber}
-                      value={this.state.phoneNumber}
-                      className='own'                      
-                      required
-                      />
-                  </div> 
-                  <div className="inputBx">
-                      {/* <span>NIC : </span> */}
-                      <input type='text' 
-                      placeholder="NIC" 
-                      onChange={this.changenic}
-                      value={this.state.nic}
+                      placeholder="nic" 
                       className='own'
-                      required
-                      />
-                  </div>   
-                  <div className="inputBx">
-                      {/* <span>Address : </span> */}
+                      value={inputs.nic}
+                      onChange={handleChange}
+                      // required
+                      name='nic'
+                />
+                  </div>
+
+                  <div className="SignupInputBox">
                       <input type='text' 
-                      placeholder="Address" 
-                      onChange={this.changeaddress}
-                      value={this.state.address}
+                      placeholder="address" 
                       className='own'
-                      required
+                      value={inputs.address}
+                      onChange={handleChange}
+                      // required
+                      name='address'
+                />
+                  </div>
+
+                  <div className="SignupInputBox">
+                      <input type='text' 
+                      placeholder="email" 
+                      className='own'
+                      value={inputs.email}
+                      onChange={handleChange}
+                      // required
+                      name='email'
                       />
                   </div>
-                  
-                  <div className="inputBx">
-                      {/* <span>Company : </span> */}
+
+                  <div className="SignupInputBox">
                       <input type='text' 
-                      placeholder="Company" 
-                      onChange={this.changecompany}
-                      value={this.state.company}
+                      placeholder="password" 
                       className='own'
-                      required
+                      value={inputs.password}
+                      onChange={handleChange}
+                      id="noSeats"
+                      // required
+                      name='password'
+                />
+                  </div>
+                  
+                  <div className="SignupInputBox">
+                      <input type='text' 
+                      placeholder="confirmPassword" 
+                      className='own'
+                      value={inputs.confirmPassword}
+                      onChange={handleChange}
+                      // required
+                      name='confirmPassword'
                       />
+                  </div>
                 
-                   </div>
+                <input type='submit' className="SignupButton" value='SIGN UP ME' />
                
-                   <div className="inputBx">
-                      {/* <span>Email : </span> */}
-                      <input type='text' 
-                      placeholder="E-mail" 
-                      onChange={this.changeemail}
-                      value={this.state.email}
-                      className='own'
-                      required
-                      />
-                </div>
-                <div className="inputBx">
-                      {/* <span>password : </span> */}
-                      <input type='password' 
-                      placeholder="Password" 
-                      onChange={this.changepassword}
-                      value={this.state.password}
-                      className='own'
-                      required
-                      />
-                </div>
+                  
 
-                <div className="inputBx">
-                      {/* <span>password : </span> */}
-
-                      <input type='password' 
-                      placeholder="Conform password" 
-                      //  onChange={this.changePassword}
-                      // value={this.state.password}
-                      className='own'
-                      required
-                      />
-                  </div>
-
-                <div >
-                <input type='submit' className="btn" value='SIGN UP ME'/>
-                </div>
-              </form>
-            </div>
+                </form>
+              </div>
           </div>
+
           <div className="imgBx">
-              <img src ="4.jpg"></img>
-          </div>   
-          </section>
-      </div>
-    );
-  }
+              <img src ="4.jpg"/>
+          </div>
+        </section>
+          
+        </div>
+    </div>
+  )
 }
- 
-export default StaffSignup;

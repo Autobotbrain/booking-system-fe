@@ -1,0 +1,35 @@
+
+ .paymentContainer{
+    padding-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 50px;
+    background-color: rgb(232, 237, 242);
+ }
+
+ .PaymentTitle{
+    font-size: 70px;
+    color: rgb(135, 0, 0);
+    background-color: rgb(232, 237, 242);
+ }
+ .cardpay{
+   margin-top: 20px;
+   text-align: left;
+}
+
+ .bankslip{
+    margin-top: 40px;
+    text-align: left;
+ }
+
+ .bankslipinfo{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 30px;
+ }
+
+ .choose{
+    margin-top: 50px;
+    font-size: 20px;
+ }
+ 
