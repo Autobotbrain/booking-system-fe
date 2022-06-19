@@ -1,0 +1,142 @@
+.button{
+    background-color: rgb(91, 9, 9);
+    color: rgb(213, 213, 213);
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 6VW;
+    font-size: 3VW;
+}
+
+/* Col-3 LEFT */
+#leftButtons{
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+    border-radius: 10px;
+    color: rgb(246, 216, 126);
+   font-weight: bold;
+}
+
+.wellcomeId{
+    margin-bottom: 11vw;
+}
+
+/* col-6 CENTER */
+
+.AdminPublic{
+  height: 5vw;
+  text-align: center;
+  margin-bottom: 7vw;
+  border-radius: 2vw;
+  font-size: 4vw;
+  font-weight: bold;
+  margin-top: -15px;
+  padding-top: -2vw;
+}
+
+.newblog-button{
+    margin-bottom: 30px;
+    float: right;
+    background-color: rgb(60, 209, 85);
+    border: none;
+    border-radius: 20px;
+    height: 3VW;
+    width: 15VW;
+    font-size: 1vw;
+    margin-top: -2vw;
+}
+
+
+/* Col-3 Right */
+
+.img{
+    margin-left: 0;
+    border-radius: 70px;
+    width: 7vw;
+    height: 7vw;
+    margin-bottom: 5vw;
+ }
+
+/* #RightButtons{
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+    border-radius: 10px;
+    color: rgb(246, 216, 126);
+    font-weight: bold;
+} */
+
+
+/* CSS */
+#RightButtons {
+  background-color: #070225;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  width: 8vw;
+  height: 8vw;
+  margin-top: 1vw;
+}
+
+#RightButtons:not(:disabled):hover,
+#RightButtons:not(:disabled):focus {
+  outline: 0;
+  background: #ffc107;;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 4px 10px 0 rgba(0,0,0,.15);
+  
+}
+
+#RightButtons-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+
+/* ANNOUSMENT UPDATE PAGE */
+
+.public{
+ text-align: center;
+}
+
+.topic{
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.title{
+  margin-top: 100px;
+}
+
+.AnnoTitle{
+  width:800px;
+  margin-bottom: 50px;
+  height:40px
+}
+
+.AnnoBody{
+  width:800px;
+  margin-bottom: 50px;
+  height:160px
+}
+
+/* Add new */
+
+.newpublic{
+  text-align: center;
+ }

@@ -1,0 +1,293 @@
+/* -------------------------------------------------------------------------- */
+
+/* ----USER PUBLIC ANNOUSMENT PAGE---- */
+
+/* col-3  LEFT SIDE*/
+
+
+
+/* .ViewOrders{
+    margin-top: 20px;
+    width: 60%;
+    height: 10vw;
+    border-radius: 10px;
+    background-color: rgb(39, 40, 87);
+    color: rgb(234, 255, 47);
+    font-size:1.5vw;
+} */
+
+
+
+/* .col-3{
+    align-items: center;
+} */
+
+
+
+/* col6 CENTER*/
+
+/* .col-6{
+    margin-left: 0;
+    margin-top: 0; 
+} */
+
+
+
+
+
+
+
+/* col-3 RIGHT SIDE  */
+
+
+
+ /* .details{
+    background-color: rgb(253, 253, 253);
+    width: 20vw;
+    height: 27vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    border-radius: 20px;
+    padding: 3vw;
+} */
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* ----ADMIN PUBLIC ANNOUSMENT PAGE----- */
+
+
+
+/* COMMON */
+
+/* h4{
+    font-size: 1.5vw;
+}
+
+p{
+    font-size: 1vw;
+}
+
+.scro{
+    height: 27vw;
+}
+
+.scroAdmin{
+    height: 20vw;
+} */
+
+
+/* ----Vehicle Update page---- */
+
+/* .field{
+    width: 100%;
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 2vw;
+    margin: 7px;
+} */
+
+/* .field2{
+    width: 100%;
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 2vw;
+    margin-top: 3vw;
+    margin-left: 7px;
+}
+
+.pic{
+    background-color: rgb(88, 88, 235);
+    width: 4vw;
+    height: 2vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    margin-left: 0.5vw;
+}
+
+.Form{
+    height: 27vw;
+}
+
+.placeholder{
+    font-size: 4vw;
+}
+
+
+
+
+
+
+
+
+.List{
+    background-color: white;
+   
+    
+}
+
+.list-group-item{
+    margin-bottom: 20px;
+    height: 60px;
+    text-align: center;
+border-color: gold;
+}
+
+
+
+#con{
+    background-color: white;
+   
+} */
+
+/* edit annousment */
+
+
+
+/* .anno-Preview h2{
+    color:red;
+    font-size: 20px;
+}
+
+.anno-list button{
+    background-color: rgb(231, 111, 111);
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 200px;
+}
+
+/* AddNewAnno css */
+/* .create{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label{
+    text-align: left;
+    display: block;
+}
+
+.create h2{
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.create input {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.create textarea{
+    width: 100%;
+    height: 300px;
+   
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.create button{
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}  */
+
+
+.ViewOrdersWellcome{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 7vw;
+}
+
+#ViewOrdersButton {
+    background-color: #070225;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation; 
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+  }
+  
+  #ViewOrdersButton:not(:disabled):hover,
+  #ViewOrdersButton:not(:disabled):focus {
+    outline: 0;
+    background: #ffc107;;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 4px 10px 0 rgba(0,0,0,.15);
+    
+  }
+  
+  #ViewOrdersButton-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
+  /* ----------CENTER---------- */
+  .ViewOrdersPublic{
+    height: 5vw;
+    text-align: center;
+    margin-bottom: 7vw;
+    border-radius: 2vw;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-top: -2vw;
+}
+
+/* -------RIGHT------- */
+.VehicleViewordersimg{
+    margin-left: 5vw;
+    border-radius: 70px;
+    width: 10vw;
+    height: 10vw;
+ }
+
+ .VehicleViewDetails{
+    background-color: rgb(253, 253, 253);
+    width: 15vw;
+    height: 25vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    border-radius: 20px;
+    padding: 2vw;
+}
+
+.VehicalViewInfo{
+    width: 12vw;
+    height: 4.5vw;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 1vw;
+}
