@@ -98,11 +98,11 @@ export default function EditAnnousment() {
 
             <Link to="/ViewOrders">
               <button type="button" id="RightButtons">
-                View/Edit Hires(Seates)
+                    View Bookings
               </button>
             </Link>
 
-            <Link to="/ViewOrders">
+            <Link to="/checkVehicles">
               <button
                 type="button"
                 className="btn btn-outline-warning"

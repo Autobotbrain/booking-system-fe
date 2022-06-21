@@ -67,27 +67,27 @@ export default function Announsment() {
         </div>
 
         <div className="col-2">
-          <img src="2.jpg" className="VehicleImg" />
-
-          <div className="VehicleDetails">
-            <div className="VehicalInfo">
-              {/* <span >Vehicle Id</span>
-                                 <br/>
-                                 <span >6474848*7</span> */}
+          <div className="card text-center" id="CardProfile">
+            <div className="card-header">
+              <img src="2.jpg" className="VehicleImg" />
             </div>
+            <div class="card-body">
+            
+              <div className="VehicalInfo"></div>
 
-            <div className="VehicalInfo">
-              {/* <span >071 1234567</span>
-                                 <br/>
-                                 <span >mobile</span> */}
+              <hr />
+
+              <div className="VehicalInfo"></div>
+              <hr />
+
+              <div className="VehicalInfo"></div>
+              <hr />
+
+              <div className="VehicalInfo"></div>
             </div>
-
-            <div className="VehicalInfo">{/* <span >Address</span> */}</div>
-
-            <div className="VehicalInfo">
-              {/* <span >Registration number</span> */}
-            </div>
+           
           </div>
+
         </div>
       </div>
     </div>

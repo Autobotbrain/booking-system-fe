@@ -16,13 +16,14 @@ export default function SignUp() {
     MNumber: "",
     email: "",
     password: "",
-    ConformPassword: "",
+    // ConformPassword: "",
+    tag:"vehicle1"
   });
 
   const [errorInput1, SetErrorInput] = useState("");
 
   const handleChange = (e) => {
-    console.log(inputs);
+    // console.log(inputs);
     setInputs((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -76,6 +77,7 @@ export default function SignUp() {
     //     alert("Password is not matching");
     // }
     else {
+      console.log(inputs)
       await axios
         .post("http://localhost:4000/VehicleOwner/signupDetails", {
           VehicleOwner: String(inputs.VehicleOwner),
@@ -87,15 +89,17 @@ export default function SignUp() {
           MNumber: Number(inputs.MNumber),
           email: String(inputs.email),
           password: String(inputs.password),
+          tag:String(inputs.tag)
           //ConformPassword: String(inputs.ConformPassword),
         })
         .then((res) => res.data);
 
       //CAllING VALIDITY FUNCTIONS
       handlValidation();
-      window.location.reload(2000);
+      // window.location.reload(2000);
     }
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
