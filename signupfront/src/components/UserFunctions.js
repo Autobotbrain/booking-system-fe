@@ -18,12 +18,12 @@ export const register =newUser=>{
 export const login=user=>{
     
     return axios
-        .post('http://localhost:5000/app/login',{
+        .post('http://localhost:4000/app/login',{
             email:user.email,
             password:user.password
         })
             .then(res=>{
-                console.log(res)
+                console.log(res.data)
                 localStorage.setItem('usertoken',res.data)
                 return res.data
 

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { login } from './UserFunctions'
 import '../Styles/Login.css'
+import {withRouter} from './withRouter';
+import jwtDecode from 'jwt-decode'
 
-export default class Login extends Component {
+class Login extends Component {
 
     constructor(){
         super();
@@ -30,7 +32,21 @@ export default class Login extends Component {
 
 
         login(user).then(res=>{
-            this.props.history.push(`/profile`)
+            
+            // if(res.data)
+
+            const token = localStorage.usertoken
+            const decode = jwtDecode(token)
+            
+
+            console.log(decode.tag)
+            if(decode.tag=="vehicle"){
+                this.props.navigate(`/Announsment`,{res})
+            }
+            
+            
+        }).catch(err=>{
+            console.log("error occured :"+err)
         })
     }
 
@@ -89,7 +105,6 @@ export default class Login extends Component {
                                     <button  className='signInButton'>Sign In</button>
 
                                     <p className='notAccountSingUpContainer'>Don’t have an acount?<a href='/'> SIGN UP</a></p>
-                                    <p className='poliyContainer'>By singing up you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>
 
                                 </h1>
                             </form>
@@ -101,3 +116,5 @@ export default class Login extends Component {
         )
     }
 }
+
+export default withRouter(Login);

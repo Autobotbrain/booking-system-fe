@@ -1,16 +1,19 @@
 import React, {Component} from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+
 
 import NavBar from './components/NavBar'
 import Login from './components/Login'
 import Register from './components/Register'
 import Landing from './components/Landing'
-import Profile from './components/Profile'
 import FileUpload from './components/FileUpload'
 import BookingList from './components/BookingList'
 import Message from './components/Message'
 import AddBooking from './components/AddBooking'
-
+import Help from './components/Help'
+import VehicleSignUp from "./components/VehicleSignUp";
+import UserUpdate from "./components/UserUpdate";
+import Announsment from "./components/Announsment";
 
 
 import './Styles/navbar.css'
@@ -127,37 +130,98 @@ import './Styles/navbar.css'
  
 
 class App extends Component {
+  
   render() {
     return (
-      <Router>
+      <div  style={{
+              display: 'flex',
+              alignItems: 'center',
+              background: "#F4F5F7",
+              justifyContent: 'center',
+              margin:0,
+              padding: 0,
+              height:900,
+              paddingTop:50
+    
+    
+              
+            }}>
+        
+        
+        <Router >
+        <div className="base"><div className="base2"><NavBar /></div></div>
+        <Routes>
 
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            background: "#F4F5F7",
-            justifyContent: 'center',
-            height:1000
-          }}
-        >
-          <div className="container" >
-            <div className="base"><div className="base2"><NavBar /></div></div>
+          
+          <Route path='/' element={<Landing />} />
+          <Route exact path='/login' element={<Login />} />
+          <Route exact path='/Help' element={<Help />} />
 
-            <Route exact path='/' component={Landing} />
-            <div className="container">
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/profile" component={Profile} />
-              <Route exact path="/uploads" component={FileUpload} />
-              <Route exact path="/bookings" component={BookingList} />
-              <Route exact path="/AddBookings" component={AddBooking} />
-            </div>
-          </div>
-        </div>
+          <Route exact path='/VehicleSignup' element={<VehicleSignUp />} />
+
+          USER Profiles
+          <Route path='/Announsment' element={<Announsment />}  />
+          <Route path='/UserUpdate' element={<UserUpdate />} />
+          {/* <Route path='/Admin' element={<EditAnnounsment />} />
+          <Route path='/Passenger' element={<Passenger />} />
+          <Route path='/Driver' element={<Driver />} />
+          <Route path='/SchoolStudent' element={<SchoolStudent />} />
+
+          
+          <Route path='/AssignDrivers' element={<AssignDrivers />} />
+          <Route path='/AddNewAnno' element={<AddNewAnno />} />
+          <Route path='/Admin/:id' element={<AnnousmentUpdate />} />
+          <Route path='/feedback' element={<FeedBAckTable />} />
+          <Route path='/PaymentRequest' element={<PaymentTable />} />
+
+          <Route path='/ViewOrders' element={<ViewBookings />} />
+          <Route path='/checkvehicles' element={<CheckVehiclesRegistration />} />
 
 
 
+
+          <Route path='/x' element={<SignupTable />} /> */}
+
+
+        </Routes>
       </Router>
+      </div>
+
+      
+      
+      // <Router>
+      
+
+      //   <div
+      //     style={{
+      //       display: 'flex',
+      //       alignItems: 'center',
+      //       background: "#F4F5F7",
+      //       justifyContent: 'center',
+      //       height:1000
+      //     }}
+      //   >
+      //     <div className="container" >
+      //       <div className="base"><div className="base2"><NavBar /></div></div>
+
+      //       <Route exact path="/" component={Landing} />
+      //       <div className="container">
+      //         {/* <Route exact path="/register" component={Register} />
+      //         <Route exact path="/login" component={Login} />
+      //         <Route exact path="/profile" component={Profile} />
+      //         <Route exact path="/uploads" component={FileUpload} />
+      //         <Route exact path="/bookings" component={BookingList} />
+      //         <Route exact path="/AddBookings" component={AddBooking} />
+      //         <Route exact path="/Help" component={Help} />
+      //         <Route exact path="/VehicleSignup" component={VehicleSignUp}   /> */}
+      //         {/* <Route path='/UserUpdate' element={<UserUpdate/>} /> */}
+      //       </div>
+      //     </div>
+      //   </div>
+
+
+        
+      // </Router>
     )
   }
 }

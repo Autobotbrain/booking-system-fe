@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 
-import {Link,withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import {withRouter} from './withRouter';
 
 
 class NavBar extends Component {
@@ -9,7 +10,7 @@ class NavBar extends Component {
     logOut(e){
         e.preventDefault()
         localStorage.removeItem('usertoken')
-        this.props.history.push(`/`)
+        this.props.navigate(`/`)
     }
 
 
@@ -29,12 +30,12 @@ class NavBar extends Component {
                     </Link>
                 </li>
                 <li className='nav-tabs'>
-                    <Link to ="/register" className='nav-link' style={{color: "#000"}}>
+                    <Link to ="/VehicleSignUp" className='nav-link' style={{color: "#000"}}>
                         <h1><img src="https://img.icons8.com/ios/50/000000/sign-up.png"/>Register</h1>
                     </Link>
                 </li>
                 <li className='nav nav-tabs'>
-                    <Link to ="/" className='nav-link' style={{color: "#000"}}>
+                    <Link to ="Help" className='nav-link' style={{color: "#000"}}>
                         <h1><img src="https://img.icons8.com/ios/50/000000/phone-disconnected.png"/>Contact Us</h1>
                     </Link>
                 </li>
