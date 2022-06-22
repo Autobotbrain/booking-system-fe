@@ -1,0 +1,187 @@
+
+.card{
+    position: absolute;
+    width: 700px;
+    height: 690px;
+    right: 304px;
+    top: -25px;
+    
+    background: #F6F6F6;
+    filter: drop-shadow(-5px -5px 10px rgba(41, 41, 41, 0.555));
+    border-radius: 30px;
+}
+
+.logo{
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    left: 100px;
+    top: 46px;
+}
+
+.signIn{
+    position: absolute;
+    width: 653px;
+    height: 2px;
+    left: 100px;
+    top: 174px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 40px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.emailContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 708px;
+    height: 132px;
+    left: 100px;
+    top: 240px;
+}
+.inputBody{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 42px;
+    
+    position: static;
+    width: 550px;
+    height: 85px;
+    left: 0px;
+    top: 47px;
+    
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #D8D8D8;
+    border-radius: 25px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 5px 0px;    
+}
+.passwordContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 708px;
+    height: 134px;
+    left: 100px;
+    top: 380px;
+}
+
+.userAggrementContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 708px;
+    height: 66px;
+    left: 100px;
+    top: 520px;
+}
+.userAggrementCheckbox{
+    position: static;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 19px;
+}
+.userAggrementBody{
+    
+    width: 550px;
+    
+    left: 67px;
+    top: 0px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25px;
+    
+    color: rgba(0, 0, 0, 0.7);
+    
+    
+    /* Inside auto layout */
+    
+    flex:auto;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 19px; 
+}
+
+.signInButton{
+    position: absolute;
+    width: 423px;
+    height: 59px;
+    left: 180px;
+    top: 600px;
+    
+    background: #FAFF00;
+    border-radius: 50px;
+}
+
+.notAccountSingUpContainer{
+    position: absolute;
+    width: 563px;
+    height: 36px;
+    left: 00px;
+    top: 710px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+.image{
+    position: absolute;
+    width: 670px;
+    height: 690px;
+    border-radius: 30px;
+    
+    padding-left: 0px;
+    filter: drop-shadow(-5px -5px 10px rgba(41, 41, 41, 0.555));
+    border-radius: 30px;
+}
+.imageContainer{
+    position: absolute;
+    width: 640px;
+    height: 690px;
+    right: 270px;
+    top: 105px;
+    
+    background: #2b2b2ba6;
+    
+}
