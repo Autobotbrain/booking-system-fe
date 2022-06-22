@@ -5,8 +5,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/VehicleSignUp.css";
 
+
 export default function VehicleSignUp() {
-    //   const history = useNavigate();
+    const history = useNavigate();
     const [inputs, setInputs] = useState({
         VehicleOwner: "",
         VehicleModel: "",
@@ -92,17 +93,24 @@ export default function VehicleSignUp() {
                     //ConformPassword: String(inputs.ConformPassword),
                     tag:String(inputs.tag)
                 })
-                .then((res) => res.data);
+                .then(res=>{
+                    console.log(res.data)
+                    
+                   // setErrMessage(res.data)
+    
+                })
+                
 
             //CAllING VALIDITY FUNCTIONS
             handlValidation();
-            window.location.reload(2000);
+            // window.location.reload(2000);
         }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        sendRequest();
+        
+        sendRequest().then(() => history("/login"));
     };
 
     

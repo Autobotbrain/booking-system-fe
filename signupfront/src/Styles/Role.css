@@ -1,0 +1,31 @@
+.DivContainer{
+    padding: 40px;
+}
+
+.RoleInfo{
+    width: 500px;
+    margin-right:70px ;
+    margin-bottom: 50px;
+}
+.card-deck{
+    display: flex;
+    /* float:; */
+}
+
+.cardRole{
+    margin-left: 30px;
+    width: 20vw;
+    height: 28vw;
+    background-color: rgb(0, 90, 168);
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 3px 7px 6px 7px #888888;
+}
+.RoleButton{
+    border: none;
+    width: 20vw;
+    height: 28vw;
+    margin-left: 34px;
+   
+   
+}

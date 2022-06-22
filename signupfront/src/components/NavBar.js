@@ -30,7 +30,7 @@ class NavBar extends Component {
                     </Link>
                 </li>
                 <li className='nav-tabs'>
-                    <Link to ="/VehicleSignUp" className='nav-link' style={{color: "#000"}}>
+                    <Link to ="/SelectRole" className='nav-link' style={{color: "#000"}}>
                         <h1><img src="https://img.icons8.com/ios/50/000000/sign-up.png"/>Register</h1>
                     </Link>
                 </li>

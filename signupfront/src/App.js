@@ -16,6 +16,26 @@ import UserUpdate from "./components/UserUpdate";
 import Announsment from "./components/Announsment";
 
 
+
+
+
+import ViewOrders from "./components/ViewOrders.js ";
+import EditAnnounsment from "./components/EditAnnousments/EditAnnousment";
+// import AssignDrivers from "./components/Admin/AssignDrivers/AssignDrivers";
+import AddNewAnno from "./components/EditAnnousments/AddNewAnno";
+import AnnousmentUpdate from "./components/EditAnnousments/AnnousmentUpdate";
+// import FeedBAckTable from "./components/Admin/FeedBack/FeedBAckTable";
+// import PaymentTable from "./components/Admin/PaymentRequest/PaymentTable";
+// import SignupTable from "./components/Admin/VehicleSignup/VehicleSignup";
+
+import SelectRole from "./components/SelectRole";
+// import ViewBookings from "./components/Admin/ViewBookings/ViewBookings";
+// import CheckVehiclesRegistration from "./components/Admin/CheckVehiclesRegistration/CheckVehiclesRegistration";
+// import Passenger from "./components/Passenger/StaffMember";
+// import Driver from "./components/Driver/Driver";
+// import SchoolStudent from "./components/SchoolStudent/SchoolStudent";
+
+
 import './Styles/navbar.css'
 // import axios from 'axios';
 // import './App.css';
@@ -162,25 +182,22 @@ class App extends Component {
           USER Profiles
           <Route path='/Announsment' element={<Announsment />}  />
           <Route path='/UserUpdate' element={<UserUpdate />} />
-          {/* <Route path='/Admin' element={<EditAnnounsment />} />
-          <Route path='/Passenger' element={<Passenger />} />
+          <Route path='/Admin' element={<EditAnnounsment />} />
+          <Route path='/SelectRole' element={<SelectRole/>}/>
+          {/* <Route path='/Passenger' element={<Passenger />} />
           <Route path='/Driver' element={<Driver />} />
-          <Route path='/SchoolStudent' element={<SchoolStudent />} />
+          <Route path='/SchoolStudent' element={<SchoolStudent />} /> */}
 
           
-          <Route path='/AssignDrivers' element={<AssignDrivers />} />
+          {/* <Route path='/AssignDrivers' element={<AssignDrivers />} /> */}
           <Route path='/AddNewAnno' element={<AddNewAnno />} />
           <Route path='/Admin/:id' element={<AnnousmentUpdate />} />
-          <Route path='/feedback' element={<FeedBAckTable />} />
-          <Route path='/PaymentRequest' element={<PaymentTable />} />
+          {/* <Route path='/feedback' element={<FeedBAckTable />} /> */}
+          {/* <Route path='/PaymentRequest' element={<PaymentTable />} /> */}
 
-          <Route path='/ViewOrders' element={<ViewBookings />} />
-          <Route path='/checkvehicles' element={<CheckVehiclesRegistration />} />
-
-
-
-
-          <Route path='/x' element={<SignupTable />} /> */}
+          {/* <Route path='/ViewOrders' element={<ViewBookings />} /> */}
+          {/* <Route path='/checkvehicles' element={<CheckVehiclesRegistration />} /> */}
+          {/* <Route path='/x' element={<SignupTable />} /> */}
 
 
         </Routes>

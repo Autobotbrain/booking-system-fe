@@ -36,7 +36,7 @@ export default function Announsment() {
         tag:decode.tag
 
     }
-    console.log(user)
+    console.log(user.name)
 
 
 
@@ -106,7 +106,7 @@ export default function Announsment() {
 
                             <hr />
 
-                            <div className="VehicalInfo"></div>
+                            <div className="VehicalInfo"> {user.VehicleOwner}</div>
                             <hr />
 
                             <div className="VehicalInfo"></div>
