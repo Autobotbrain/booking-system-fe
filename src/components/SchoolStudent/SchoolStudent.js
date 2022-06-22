@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./SchoolStudent.css";
+import "../../Styles/SchoolStudent.css";
 import School from "./School";
 
 const URL = "http://localhost:4000/app/AddNewAnno";

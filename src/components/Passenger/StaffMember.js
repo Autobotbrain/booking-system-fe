@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./StaffMember.css";
+import "../../Styles/StaffMember.css";
 import Passe from "./Staff";
 
 const URL = "http://localhost:4000/app/AddNewAnno";
@@ -35,7 +35,7 @@ export default function Passenger() {
           </Link>
           <br />
 
-          <Link to="/ViewOrders">
+          {/* <Link to="/ViewOrders">
             <button
               type="button"
               className="btn btn-outline-warning"
@@ -43,7 +43,7 @@ export default function Passenger() {
             >
               VIEW SHEDULE
             </button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* best part */}

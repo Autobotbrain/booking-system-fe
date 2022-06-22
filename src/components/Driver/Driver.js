@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Driv from "./Driv";
+import "../../Styles/Driver.css";
 
 const URL = "http://localhost:4000/app/AddNewAnno";
 
