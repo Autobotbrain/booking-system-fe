@@ -14,10 +14,11 @@ export default function Anno(props) {
             .delete(`http://localhost:4000/app/AddNewAnno/${_id}`)
             .then((res) => res.data)
             .then(() => history("/Admin"));
+            alert("Do you want to delete? ");
     };
 
     return (
-        <div>
+        <div >
             <h4>{Title}</h4>
             <p>{Description}</p>
             <Link to={`/Admin/${_id}`}>
@@ -34,6 +35,7 @@ export default function Anno(props) {
                 >
                     DELETE
                 </button>
+                
             </Link>
         </div>
     );

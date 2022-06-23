@@ -7,6 +7,10 @@
     font-size: 1.5vw;
     margin-top: 1vw;
     margin-bottom: 7vw;
+    font-weight: bold;
+    margin-left: 40px;
+
+    
 }
 
 /* --BUTTONS-- */
@@ -60,20 +64,16 @@
 
 
 .scro{
-    width: 750px;
+    width: 1050px;
     height: 420px;
     overflow: scroll;
 }
 
+.annoContainer{
+    background-color: #ffc107;
+}
 
 /* -------RIGHT SIDE----- */
-
-.VehicleImg{
-    margin-left: 5vw;
-    border-radius: 70px;
-    width: 10vw;
-    height: 10vw;
- }
 
 .VehicleDetails{
     background-color: rgb(253, 253, 253);
@@ -108,6 +108,7 @@
 
 .container{
     padding: 100px;
+    /* margin-top: 100px; */
 }
 
 .a-left{
@@ -242,11 +243,11 @@ span{
 .AdminPublic{
   height: 5vw;
   text-align: center;
-  margin-bottom: 7vw;
+  margin-bottom: 2vw;
   border-radius: 2vw;
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: bold;
-  margin-top: -15px;
+  margin-top: 150px;
   padding-top: -2vw;
 }
 
@@ -270,7 +271,8 @@ span{
     border-radius: 70px;
     width: 7vw;
     height: 7vw;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
+    margin-top: 2vw;
  }
 
 /* #RightButtons{
@@ -325,6 +327,10 @@ span{
 
 .public{
  text-align: center;
+ background-color: #f2f4ca;
+ padding-left: 50px;
+ padding-right: 50px;
+ padding-bottom: 20px;
 }
 
 .topic{
@@ -353,3 +359,72 @@ span{
 .newpublic{
   text-align: center;
  }
+
+
+ /* NEW ADDED */
+
+ #CardProfile{
+    width: 280px;
+    margin-left: 300px;
+    height: 650px;
+    border-radius: 20px;
+    
+ }
+
+ .containerAdmin{
+    padding: 200px;
+    margin-top: 100px;
+ }
+
+ .VehicalInfoAdmin{
+    width: 12vw;
+    height: 2.3vw;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    padding: 20px;
+    color: rgb(4, 55, 120);
+   
+}
+
+.VehicaltextAdmin{
+    font-size:medium;
+}
+ 
+.VehicleImgAdmin{
+    border-radius: 100px;
+    width: 8vw;
+    height: 8vw;
+ }
+
+ .staffInfo{
+    width: 12vw;
+    height: 4vw;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    padding: 20px;
+    color: rgb(4, 55, 120);
+}
+
+.schoolInfo{
+    width: 12vw;
+    height: 4vw;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 1vw;
+    padding: 20px;
+}
+
+#AnnoBar{
+    width: 900px;
+}
+
+#titleAnno{
+    font-weight: bold;
+}
+
+#DescriptionAnno{
+    color: rgb(4, 55, 120);
+    font-size: larger;
+}

@@ -1,16 +1,16 @@
-import { Component } from "react";
-import "./ViewOrders.css";
-import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import axios from "axios";
+//import "./FeedBack.css";
 
-export default function ViewOrders() {
+const ViewOrders = () => {
   const [posts, setPosts] = useState({ blogs: [] });
 
   useEffect(() => {
     const fetchPostList = async () => {
-      const { data } = await axios("http://localhost:4000/orders/getAll");
+      const { data } = await axios(
+        "http://localhost:4000/vieworders/getAllOrders"
+      );
       setPosts({ blogs: data.anno });
       console.log(data.anno);
     };
@@ -18,58 +18,46 @@ export default function ViewOrders() {
   }, [setPosts]);
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-2">
-          <h2 className="ViewOrdersWellcome">Wellcome</h2>
-          <br />
-        </div>
+    <div className=" border-warning" id="content">
+      <h5 className="FeedbackPublic">ViewBookings</h5>
 
-        <div className="col-8">
-          <h5 className="ViewOrdersPublic">View Booking</h5>
+      <ReactBootStrap.Table table table-striped hover>
+        <thead className="center">
+          <tr>
+            <th width="15%">bookingAt</th>
+            <th width="15%">bookingOn</th>
+            <th width="20%">user</th>
+            <th width="15%">vehicle</th>
+            <th width="15%">createdAt</th>
+            {/* <th width="10%">is</th> */}
 
-          <ReactBootStrap.Table table table-striped hover>
-            <thead className="center">
-              <tr>
-                <th width="20%">User</th>
-                <th width="10%">Picked up time</th>
-                <th width="10%">Arrived Time</th>
-                <th width="10%">cost</th>
+            <th width="10%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {posts.blogs &&
+            posts.blogs.map((item) => (
+              <tr key={item.id}>
+                <td>{item.bookingAt}</td>
+                <td className="center">{item.bookingOn}</td>
+                <td className="center">{item.user}</td>
+                <td className="center">{item.vehicle}</td>
+                <td className="center">{item.createdAt}</td>
+                {/* <td className="center">{item.is}</td> */}
+                {/* <td className="center">{item.createdAt}</td>
+                <td className="center">{item.updatedAt}</td> */}
+
+                <td>
+                  <button type="button" className="btn btn-danger d-flex">
+                    REMOVE
+                  </button>
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              {posts.blogs &&
-                posts.blogs.map((item) => (
-                  <tr key={item.id}>
-                    <td>{item.user}</td>
-                    <td>{item.ptime}</td>
-                    <td>{item.atime}</td>
-                    <td>{item.cost}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </ReactBootStrap.Table>
-        </div>
-
-        <div className="col-2">
-          <img
-            src="2.jpg"
-            width="150"
-            className="VehicleViewordersimg"
-            height="150"
-          ></img>
-
-          <div className="VehicleViewDetails">
-            <div className="VehicalViewInfo"></div>
-
-            <div className="VehicalViewInfo"></div>
-
-            <div className="VehicalViewInfo"></div>
-
-            <div className="VehicalViewInfo"></div>
-          </div>
-        </div>
-      </div>
+            ))}
+        </tbody>
+      </ReactBootStrap.Table>
     </div>
   );
-}
+};
+
+export default ViewOrders;

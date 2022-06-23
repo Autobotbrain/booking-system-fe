@@ -5,9 +5,10 @@
     left: 208px;
     top: 5px;
     
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 8px 10px 42px rgba(0, 0, 0, 0.42);
     border-radius: 50px;
+    background-color: #dfbb51;
 }
 
 .base2{
@@ -19,5 +20,9 @@
     
     background: #DCDCDC;
     border-radius: 50px 50px 0px 0px;
+    background-color: yellow;
 }
 
+.navbarContainer{
+    
+}

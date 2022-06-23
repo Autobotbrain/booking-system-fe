@@ -1,0 +1,221 @@
+*{
+    background-color: rgb(247, 244, 244);
+}
+
+
+/* ------LEFT SIDE------- */
+
+.wellcome{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 7vw;
+}
+
+/* --BUTTONS-- */
+#UpdateVehicle {
+    background-color: #070225;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation; 
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+  }
+  
+  #UpdateVehicle:not(:disabled):hover,
+  #UpdateVehicle:not(:disabled):focus {
+    outline: 0;
+    background: #ffc107;;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 4px 10px 0 rgba(0,0,0,.15);
+    
+  }
+  
+  #UpdateVehicle-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
+/* ----------CENTER-------- */
+
+.VehiclePublic{
+    height: 5vw;
+    margin-top: 10px;
+    margin-bottom: 5vw;
+    margin-right: 150px;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+   
+    padding-top: -2vw;
+}
+
+
+.scro{
+    width: 750px;
+    height: 420px;
+    overflow: scroll;
+}
+
+
+/* -------RIGHT SIDE----- */
+
+.VehicleImg{
+    margin-left: 1vw;
+    border-radius: 70px;
+    width: 10vw;
+    height: 10vw;
+ }
+
+.VehicleDetails{
+    background-color: rgb(253, 253, 253);
+    width: 15vw;
+    height: 25vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    border-radius: 20px;
+    padding: 2vw;
+}
+
+.VehicalInfo{
+    width: 17vw;
+    height: 4vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+#CardProfile{
+    height: 580px;
+    margin-left: -50px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------
+            END */
+
+
+.AssignDrivers{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(87, 39, 39);
+    color: greenyellow;
+}
+
+.container{
+    padding: 100px;
+}
+
+.a-left{
+    flex: 1;
+}
+
+.a-right{
+    flex: 2;
+}
+
+.ViewOrders{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(39, 40, 87);
+    color: rgb(234, 255, 47);
+    font-weight: 400px;
+}
+
+.field{
+    width: 100%;
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin: 7px;
+}
+
+.field2{
+    width: 100%;
+    color:black;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 7px;
+}
+
+.details{
+    background-color: rgb(253, 253, 253);
+    width: 200px;
+    height: 100px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.VId{
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    background-color: rgb(222, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.VId > span{
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* Admin part Css - annonsment*/
+
+
+
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+.imageBox{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.img{
+    border-radius: 60px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.RightButtons{
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+span{
+  
+    padding: 10px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+

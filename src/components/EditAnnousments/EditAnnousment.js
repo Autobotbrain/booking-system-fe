@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Anno from "./Anno";
 
+
 const URL = "http://localhost:4000/app/AddNewAnno";
 
 const fetchHandler = async () => {
@@ -64,7 +65,7 @@ export default function EditAnnousment() {
                         </button>
                     </Link>
 
-                    <p className="scro">
+                    <p className="scro"  id="AnnoBar">
                         <div className="row" id="cc">
                             <div className="col-12">
                                 <ul>
@@ -84,7 +85,7 @@ export default function EditAnnousment() {
 
                 <div className="col-2">
                     <div className="right">
-                        <img src="Admin.png" className="img" />
+                        <img src={require('../../assets/admin.png')} className="img" />
 
                         <Link to="/AssignDrivers">
                             <button

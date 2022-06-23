@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import "../Styles/navbar.css";
 
 import {Link} from 'react-router-dom'
 import {withRouter} from './withRouter';
@@ -67,27 +67,29 @@ class NavBar extends Component {
         )
 
         return(
-            <nav className='navbar navbar-expand-lg navbar-light rounded'>
-                <button className='navbar-toggler'
-                        type='button'
-                        data-toggle='collapse'
-                        data-target='#navbar1'
-                        aria-controls='navbar1'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation'>
-                        <span className='navbar-toggler-icon'></span>
-                </button>
-                <div className='collapse navbar-collapse justify-content-md-center' id='navbar1'>
-                    <ul className='nav nav-tabs'>
-                        <li className='nav-item'>
-                            <Link to="/" className='nav-link' style={{color: "#000"}}>
-                                <h1><img src="https://img.icons8.com/ios/50/000000/home--v1.png"/>Home</h1>
-                            </Link>
-                        </li>
-                    </ul>
-                    {localStorage.usertoken ? userLink:loginRegLink }
-                </div>
-            </nav>
+            <div className='navbarContainer'>
+                <nav className='navbar navbar-expand-lg navbar-light rounded'>
+            <button className='navbar-toggler'
+                    type='button'
+                    data-toggle='collapse'
+                    data-target='#navbar1'
+                    aria-controls='navbar1'
+                    aria-expanded='false'
+                    aria-label='Toggle navigation'>
+                    <span className='navbar-toggler-icon'></span>
+            </button>
+            <div className='collapse navbar-collapse justify-content-md-center' id='navbar1'>
+                <ul className='nav nav-tabs'>
+                    <li className='nav-item'>
+                        <Link to="/" className='nav-link' style={{color: "#000"}}>
+                            <h1><img src="https://img.icons8.com/ios/50/000000/home--v1.png"/>Home</h1>
+                        </Link>
+                    </li>
+                </ul>
+                {localStorage.usertoken ? userLink:loginRegLink }
+            </div>
+        </nav></div>
+            
         )
     }
 }

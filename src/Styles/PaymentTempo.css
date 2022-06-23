@@ -1,0 +1,15 @@
+.PaymentPublic{
+    height: 5vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-top: -2vw;
+}
+
+#contentPayment{
+    margin:5vw;
+    margin-top: 0vw;
+    width: 100%;
+}

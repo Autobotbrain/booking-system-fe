@@ -1,0 +1,14 @@
+#content{
+    margin:5vw;
+    margin-top: 15vw;
+    width: 100%;
+}
+
+.FeedbackPublic{  
+        text-align: center;
+        margin-bottom: 2vw;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+        padding-top: -2vw;
+}

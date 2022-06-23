@@ -34,7 +34,7 @@ export default function AddNewAnno() {
     };
 
     return (
-        <div className="newpublic">
+        <div className="public">
             <div className="topic">ADD NEW ANNOUNCEMENT</div>
 
             <div className="create">
@@ -62,6 +62,7 @@ export default function AddNewAnno() {
                         className="AnnoBody"
                     ></textarea>
 
+                    <br />
                     <button type="submit" className="btn btn-warning">
                         Add Announsment
                     </button>

@@ -16,14 +16,18 @@ export default function SelectRole() {
             <div className="card-deck">
                 <Link to="/VehicleSignup">
                     <button className="RoleButton">
-                        <div className="card">
+                        <div className="cardRole">
                             <img
-                                src="driver.jpg"
+                                 src={require('../assets/driver.jpg')} 
                                 class="card-img-top"
                                 alt="..."
                                 height={"250px"}
                             />
+                           
                             <div class="card-body">
+                            <br/>
+                            <br/>
+                            <br/>
                                 <h5 class="card-title">Driver Registration</h5>
                                 <p class="card-text">
                                     The person who runs a group discussion or focus group. She or
@@ -37,8 +41,8 @@ export default function SelectRole() {
 
                 <Link to="/VehicleSignup">
                     <button className="RoleButton">
-                        <div className="card">
-                            <img src="vehicle.jpg" class="card-img-top" alt="..." />
+                        <div className="cardRole">
+                        <img src={require('../assets/vehicle.jpg')} class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Vehicle Registration</h5>
                                 <p class="card-text">
@@ -50,10 +54,10 @@ export default function SelectRole() {
                     </button>
                 </Link>
 
-                <Link to="/VehicleSignup">
+                <Link to="/StaffSignup">
                     <button className="RoleButton">
-                        <div className="card">
-                            <img src="staff.jpg" class="card-img-top" alt="..." />
+                        <div className="cardRole">
+                            <img src={require('../assets/staff.jpg')} class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Staff Registration</h5>
                                 <p class="card-text">
@@ -68,8 +72,8 @@ export default function SelectRole() {
 
                 <Link to="/VehicleSignup">
                     <button className="RoleButton">
-                        <div className="card">
-                            <img src="student.jpg" class="card-img-top" alt="..." />
+                        <div className="cardRole">
+                        <img src={require('../assets/student.jpg')} class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Student Registration</h5>
                                 <p class="card-text">

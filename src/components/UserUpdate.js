@@ -21,6 +21,40 @@ export default function UserUpdate() {
     }, [id]);
 
     const sendRequest = async () => {
+
+        //leets validatoin
+        const re = /^[A-Za-z]+$/;
+        // const number = /^[0-9]+$/;
+        //email validatio
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        if (!inputs.VehicleOwner) {
+            alert("Vehicle Owners Name is required");
+        } else if (!re.test(inputs.VehicleOwner)) {
+            alert("Enter only letters");
+        } else if (!inputs.VehicleModel) {
+            alert("Vehicle Model is required");
+        } else if (!inputs.VehicleNumber) {
+            alert("Vehicle Number is required");
+        } else if (!inputs.Type) {
+            alert("Type is required");
+        } else if (!inputs.Seats) {
+            alert("Seats are required");
+        } else if (!inputs.ID) {
+            alert("NIC is required");
+        } else if (!inputs.MNumber) {
+            alert("Phone  number is required");
+        } else if (inputs.MNumber.length < 10) {
+            alert("Phone  number should have 10 characters ");
+        } else if (!regex.test(inputs.email)) {
+            alert("Ëmail is not valid");
+        } else if (!inputs.email) {
+            alert("Ëmail is required");
+        } else if (!inputs.password) {
+            alert("Password is required");
+        } else if (inputs.password.length < 4 || inputs.password.length > 10) {
+            alert("Password more than 4 characters");
+        }
+        else{
         await axios
             .put(`http://localhost:4000/User/signupDetails/${id}`, {
                 VehicleOwner: String(inputs.VehicleOwner),
@@ -35,11 +69,13 @@ export default function UserUpdate() {
             })
             .then((res) => res.data);
     };
+}
 
     const handleSubmit = (e) => {
         e.preventDefault();
         sendRequest().then(() => history("/e"));
     };
+    
 
     const handleChange = (e) => {
         setInputs((prevState) => ({
@@ -52,7 +88,7 @@ export default function UserUpdate() {
         <div className="container">
             <div className="row">
                 <h5 className="VehicleUpdatePublic">UPDATE VEHICLE INFOMATION</h5>
-                <div className="col-2">
+                <div className="col-2" id="delButton">
 
                     <button
                         type="button"
@@ -71,7 +107,7 @@ export default function UserUpdate() {
                         <form className="frm" onSubmit={handleSubmit}>
                             <input
                                 type="text"
-                                placeholder="Vehicle Owner"
+                                placeholder="Vehicle Owner's Name"
                                 className="field"
                                 required
                                 value={inputs.VehicleOwner}
@@ -115,33 +151,17 @@ export default function UserUpdate() {
                                 name=" MNumber"
                             />
 
-                            {/* <input 
-                type='text' 
-                placeholder="New Email" 
-                className='field2'
-                required 
-                value={inputs.email}
-                onChange={handleChange}
-                name='email'
-              /> */}
                             <input
                                 type="text"
-                                placeholder="New Password"
+                                placeholder="Owner's NIC number"
                                 className="field"
                                 required
-                                value={inputs.password}
+                                value={inputs.ID}
                                 onChange={handleChange}
-                                name=" password"
+                                name=" MNumber"
                             />
-                            <input
-                                type="text"
-                                placeholder="Existing Password"
-                                className="field"
-                            // required
-                            // value={inputs.MNumber}
-                            // onChange={handleChange}
-                            // name='MNumber'
-                            />
+                           
+                           
 
                             {/* <button type="submit" className='pic'>Update</button>    */}
                             <button type="button" className="btn btn-warning" id="btn1">
@@ -151,10 +171,10 @@ export default function UserUpdate() {
                     )}
                 </div>
 
-                <div className="col-4" id="picupdate">
+                <div className="col-4" >
                     <div className="row">
                         <div className="col-xl-4">
-                            <div className="card mb-4 mb-xl-0">
+                            <div className="card mb-4 mb-xl-0" id="picupdateUser">
                                 <div className="card-header">Profile Picture</div>
                                 <div className="card-body text-center">
                                     <img

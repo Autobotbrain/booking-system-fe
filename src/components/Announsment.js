@@ -12,13 +12,9 @@ const fetchHandler = async () => {
 };
 
 
-    
-
-
-    
-
 
 export default function Announsment() {
+    
 
     const token = localStorage.usertoken
     const decode = jwtDecode(token)
@@ -36,7 +32,7 @@ export default function Announsment() {
         tag:decode.tag
 
     }
-    console.log(user.name)
+    console.log(user)
 
 
 
@@ -48,10 +44,14 @@ export default function Announsment() {
     // console.log(Annos);
 
     return (
-        <div className="container">
+        <div className="containerAdmin">
             <div className="row">
                 <div className="col-2">
-                    <h2 className="wellcome">WELLCOME</h2>
+                    <div className="wellcome">
+                    <h2>Hello</h2>
+                    <h3> {user.VehicleOwner}</h3>
+                    </div>
+                    
 
                     <Link to="/UserUpdate">
                         <button
@@ -76,10 +76,11 @@ export default function Announsment() {
                 </div>
 
                 {/* best part */}
-                <div className="col-8">
+                <div className="col-8" >
                     <h5 className="VehiclePublic">Public Announcement</h5>
 
-                    <p className="scro">
+                    
+                    <p className="scro" id="AnnoBar">
                         <div className="row" id="cc">
                             <div className="col-12">
                                 <ul>
@@ -98,21 +99,29 @@ export default function Announsment() {
                 <div className="col-2">
                     <div className="card text-center" id="CardProfile">
                         <div className="card-header">
-                            <img src="2.jpg" className="VehicleImg" />
+                        <img className='VehicleImgAdmin' src={require('../assets/2.jpg')} />
                         </div>
                         <div class="card-body">
 
-                            <div className="VehicalInfo"></div>
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Vehicle Owner {user.VehicleOwner}</h4></div>
 
                             <hr />
 
-                            <div className="VehicalInfo"> {user.VehicleOwner}</div>
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Vehicle Model {user.VehicleModel}</h4></div>
                             <hr />
 
-                            <div className="VehicalInfo"></div>
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Owners NIC {user.ID}</h4></div>
                             <hr />
 
-                            <div className="VehicalInfo"></div>
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Number of seats {user.Seats}</h4></div>
+                            
+                            <hr />
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Tel Number {user.MNumber}</h4></div>
+                        
+                            <hr />
+                            <div className="VehicalInfoAdmin"><h4 className="VehicaltextAdmin">Vehicle Type {user.Type}</h4></div>
+                        
+                       
                         </div>
 
                     </div>

@@ -110,7 +110,8 @@ export default function VehicleSignUp() {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        sendRequest().then(() => history("/login"));
+        sendRequest()
+        // .then(() => history("/login"));
     };
 
     
