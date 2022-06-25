@@ -14,7 +14,7 @@ export default function SelectRole() {
             </div>
 
             <div className="card-deck">
-                <Link to="/VehicleSignup">
+                <Link to="/DriverSignup">
                     <button className="RoleButton">
                         <div className="cardRole">
                             <img
@@ -70,7 +70,7 @@ export default function SelectRole() {
                     </button>
                 </Link>
 
-                <Link to="/VehicleSignup">
+                <Link to="/ParentSignUp">
                     <button className="RoleButton">
                         <div className="cardRole">
                         <img src={require('../assets/student.jpg')} class="card-img-top" alt="..." />

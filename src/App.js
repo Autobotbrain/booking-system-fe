@@ -16,6 +16,9 @@ import UserUpdate from "./components/UserUpdate";
 import Announsment from "./components/Announsment";
 import StaffSignup from "./components/StaffSignup";
 
+import ParentSignUp from "./components/ParentSignUp";
+import DriverSignup from "./components/DriverSignup";
+
 
 
 
@@ -182,7 +185,8 @@ class App extends Component {
           <Route exact path='/Help' element={<Help />} />
 
           <Route exact path='/VehicleSignup' element={<VehicleSignUp />} />
-
+          <Route exact path='/DriverSignup' element={<DriverSignup/>} />
+         <Route exact path='/ParentSignUp' element={<ParentSignUp/>} /> 
           USER Profiles
           <Route path='/Announsment' element={<Announsment />}  />
           <Route path='/UserUpdate' element={<UserUpdate />} />
