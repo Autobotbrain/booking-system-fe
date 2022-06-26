@@ -1,26 +1,14 @@
 import axios from "axios"
 
-export const register =newUser=>{
-    console.log(newUser)
-    return axios
-        .post('http://localhost:5000/app/signup',{
-            first_name:newUser.first_name,
-            last_name:newUser.last_name,
-            email:newUser.email,
-            password:newUser.password
-        })
-            .then(res=>{
-                console.log("registered");
-                window.alert("register successfull")
-            })
-}
+
 
 export const login=user=>{
     
     return axios
         .post('http://localhost:4000/app/login',{
             email:user.email,
-            password:user.password
+            password:user.password,
+            tag:user.tag
         })
             .then(res=>{
                 console.log(res.data)

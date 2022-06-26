@@ -94,7 +94,7 @@
     position: absolute;
     width: 708px;
     height: 66px;
-    left: 100px;
+    left: 10px;
     top: 520px;
 }
 .userAggrementCheckbox{
@@ -130,7 +130,7 @@
     
     /* Inside auto layout */
     
-    flex:auto;
+    flex-direction: row;
     order: 1;
     flex-grow: 0;
     margin: 0px 19px; 
